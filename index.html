@@ -1,0 +1,615 @@
+<!--เขียนเว็บไซต์ภายใต้หัวข้อ “สัตว์วิเศษ” ด้วย HTML, CSS, Javascript 
+  โดยที่มี CSS, Javascript จะต้องอยู่ในไฟล์ .html เพียงไฟล์เดียวเท่านั้น 
+  สำหรับ Javascript จะต้องมีการใช้เพื่อทำฟังก์ชันที่ใช้งานกับ DOM เช่น 
+  เปิดปิด Navigation toggle (Drawer , bottom, stack), ทำ Animation, 
+  ทำ Section toggling เป็นต้น อย่างน้อย 3 อย่าง 
+  และส่งโดยการอัปโหลดไฟล์บน Google drive หรือ Github แล้วแนบเป็น URL มา-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Special Animal</title>
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <!--
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script type="text/Javascript" src="index.js"></script>
+-->
+
+</head>
+<body>
+  <nav>
+    <div class="content">
+      <div class="Navmenu" id="menu">
+
+        <div class="logo">
+          <h3>Special Animal</h3>
+        </div>
+
+        <ul class="Navmenu" id="Navmenu">
+          <li class="Characters" ><a href="#Characters">Characters</a></li>
+          <li class="Originanimals"><a href="#Originanimals">Origin-animals</a></li>
+          <li class="Habitat"><a href="#Habitat">Habitat</a></li>
+          <p>|</p>
+          <li class="OnlineWeb"><a href="https://itcamp19.firebaseapp.com/"> online Website </a></li>
+          <li class="MyWebsite"><a href="https://mybio-d88cb.firebaseapp.com/">My Website</a></li>
+        </ul>
+
+        <div class="hammenu" onclick="hammenu(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+      <div class = 'toggle-switch' >
+        <label class="mode">
+            <input type = 'checkbox' onclick="toggleMode()">
+            <span class = 'slider' id="theme-toggle" ></span>
+        </label>
+    </div>
+  
+
+  <main>
+    <div class="content">
+
+
+      <div class="Hideul-span">
+        <ul>
+          <button class="button1" onclick="hide()">Click Me</button>
+        </ul>
+      </div>
+      
+
+
+
+        <ul>
+          <div class="Characters" id="Characters">
+            <h1>Test Characters</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, expedita nam beatae excepturi nemo suscipit ab quod iure assumenda voluptates nihil, veniam nesciunt itaque numquam cupiditate voluptate iusto ratione odio.</p>
+          </div>
+        </ul>
+
+        <ul>
+          <div class="Originanimals" id="Originanimals">
+            <h1>Test Originanimals</h1>
+            <ul class="Type-1">
+              <h1 class="Type-1"> Blue Dragon</h1>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Glaucus_atlanticus_1_cropped.jpg/1024px-Glaucus_atlanticus_1_cropped.jpg" alt="">
+
+              <p class="info">ทากทะเลสีน้ำเงิน หรือที่รู้จักกันในชื่อของ sea swallow, blue glaucus และ blue ocean slug เป็นชื่อของสิ่งมีชีวิตที่อาศัยอยู่ใต้น้ำทะเลลึกชนิดหนึ่ง ซึ่งเป็นสัตว์จำพวกหอย แต่จะมีรูปร่างลักษณะที่แปลกประหลาดออกไป</p><br>
+            </ul>
+            
+
+
+            <p class="test" id="test">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo minima adipisci dignissimos distinctio ut dolores iste assumenda sint unde, omnis quas iure sequi? Reiciendis nulla ullam, praesentium rerum et quis hic. Nesciunt at id non minima amet, hic officiis nam, saepe, vel adipisci veniam reiciendis modi atque dolor vero tempora totam porro dicta eveniet illo beatae soluta? Dolore dicta voluptates est tenetur fugiat placeat molestiae, at, non sapiente consectetur, distinctio dolores corrupti doloremque optio odio cumque porro voluptatum labore incidunt rem nulla nostrum voluptate? Temporibus excepturi dolorum, dolore iste illum eum eveniet tenetur voluptates. Quos, totam mollitia corrupti necessitatibus excepturi deserunt dolorum ipsam error iusto cumque ducimus saepe eum. Aut distinctio explicabo quaerat saepe similique obcaecati officia vel quia? Id necessitatibus possimus ullam iusto error, quo rerum dolores sint illum nostrum quam ex dolorem minima repellendus odit voluptate optio ipsam aliquam placeat et, alias sapiente cum. Sint, doloribus voluptatibus adipisci quidem voluptatum omnis reprehenderit ratione, eos esse perspiciatis minus exercitationem rem eaque quaerat repudiandae facilis tenetur illo! Laudantium, harum itaque nostrum minima culpa nemo expedita porro molestias consequatur praesentium corporis distinctio quaerat fuga inventore qui reprehenderit, cupiditate amet sit quos neque veritatis dignissimos reiciendis. Iusto veritatis impedit nostrum vitae officia?</p>
+
+          </div>
+        </ul>
+          
+        <ul>
+          <div class="Habitat" id="Habitat">
+            <h1>Test  Habitat</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores, expedita nam beatae excepturi nemo suscipit ab quod iure assumenda voluptates nihil, veniam nesciunt itaque numquam cupiditate voluptate iusto ratione odio.</p>
+    
+          </div>
+        </ul>
+
+        <ul class="span" id="span">
+          <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quisquam quod maiores fugit reiciendis nihil ad voluptas accusamus distinctio provident possimus blanditiis laudantium cupiditate, dolorum consectetur ex! Aliquid a possimus cumque doloremque deleniti amet autem expedita! Cumque laborum recusandae magni nulla eaque sapiente fugiat nemo error. Aspernatur, iure! Dolores quidem recusandae error sunt hic voluptate delectus distinctio ipsum voluptatum! Et, temporibus cupiditate in debitis asperiores magni minima aliquam magnam maxime porro necessitatibus dolore provident dicta a omnis nisi nesciunt deserunt non iste nulla, officia rerum. Dolorum quia illum voluptatibus nulla quos repudiandae! Laboriosam, magnam repellendus! Debitis accusantium eos voluptatem placeat nam praesentium sunt veritatis molestias saepe dolorem a inventore voluptas ratione natus omnis est quidem ipsa, possimus adipisci illum aut unde eveniet molestiae ut? In repellendus amet laborum facere molestiae perferendis sunt nobis, sit, aliquid, debitis reprehenderit harum possimus cum voluptatibus? Perferendis optio quam culpa deleniti atque laboriosam nisi, debitis ab quaerat quasi repellat eveniet fugiat, repudiandae dolor adipisci consequuntur voluptatem provident error! Repudiandae quasi magni esse, asperiores repellat mollitia nisi obcaecati in voluptates ullam adipisci laborum inventore porro expedita unde vero deleniti quisquam cum. Dicta, aperiam sapiente quos beatae, obcaecati laboriosam veritatis odit ullam magnam deserunt eius quibusdam voluptatem nisi iusto? Deleniti aliquam repellat, tempora molestiae nemo deserunt inventore laborum distinctio perspiciatis? Voluptas cumque, ab voluptates cupiditate vero non minima saepe mollitia? Est provident delectus nobis fuga sed blanditiis facere tempore odio veritatis in assumenda a, laboriosam laborum consequuntur id! Earum impedit, corrupti mollitia aliquid delectus nesciunt fugiat vel assumenda nemo ipsa repudiandae eius, porro recusandae enim. Recusandae minima vero eos cumque assumenda sapiente blanditiis similique optio mollitia voluptate excepturi non maiores reiciendis consequatur nobis veniam, omnis perferendis delectus odio facere distinctio error iure aut? Doloribus praesentium debitis iste, veritatis soluta a sapiente veniam repellendus necessitatibus sint nostrum cupiditate aliquid facilis? Error, alias? Repudiandae culpa ab suscipit reiciendis in. Expedita placeat reprehenderit delectus quam consequatur eveniet doloremque accusamus deserunt, soluta, ad libero ratione temporibus perspiciatis nulla modi cumque a sequi. Ullam officiis numquam consequuntur commodi nisi eveniet. Reiciendis sint hic est et nihil fugiat. Sit itaque sed nobis quisquam. Porro adipisci deserunt, nobis reiciendis modi temporibus omnis hic quis error quos ratione aliquid corporis et veniam eveniet asperiores. Commodi voluptatibus beatae nam praesentium pariatur laudantium cupiditate saepe ducimus! Quis, explicabo natus mollitia facilis amet ullam nesciunt nam aliquam nemo ut recusandae tempore nulla accusamus dolorum error. Sapiente mollitia similique reiciendis, laborum, labore cupiditate magni pariatur soluta non ipsum ratione eligendi atque eius, adipisci doloribus beatae blanditiis possimus tempore omnis eaque doloremque illum? Voluptas quo aliquid sed minima aliquam, laboriosam rem architecto hic enim? Soluta, pariatur optio fugiat a corporis deleniti. Ipsam, beatae? Vitae cumque illum natus nam, error ullam eum ut explicabo dolores unde id, beatae pariatur! Ex, nihil consequuntur non consequatur sunt tenetur reiciendis cupiditate saepe corporis ea quia delectus est odio, dolorum consectetur, unde fuga excepturi! Tempora quos sed odio tenetur sequi dicta nulla molestiae, et, vel excepturi ipsum numquam qui commodi accusamus deserunt rem iusto, ab unde a. Sint ex temporibus iste facilis iure incidunt nulla impedit dolorum laborum earum rem commodi vero dolore sequi, distinctio deserunt sapiente inventore. Ipsa aliquid suscipit dolores necessitatibus ex architecto praesentium, perferendis ratione fugit placeat. Voluptatibus quos facere aut labore. Voluptatibus nulla architecto veritatis aspernatur vel, eius natus dolorem adipisci similique aliquam? Dolorem fuga obcaecati facere, debitis quibusdam ex ea vero, reiciendis deleniti soluta est officia! Quam odio debitis cumque et iste illum in nulla, vitae non fuga ex eos nemo quo ad similique. Commodi dolorem ex quia aperiam nobis mollitia veritatis nihil saepe quae eius. Molestias, beatae dolorem ratione a earum atque suscipit? Esse nostrum sequi provident minus aperiam quas veritatis excepturi tempora sed? Quam assumenda perferendis, totam quos nesciunt quia aut quis culpa sit tempora dolor aspernatur amet quas id accusantium esse voluptatem vero harum adipisci nostrum aliquid iure, doloribus sequi vitae. Voluptas quos omnis libero tempora, placeat id cumque pariatur saepe aliquam, deserunt nisi, provident enim quaerat iure facere odio eaque! Ullam et saepe adipisci? Inventore, saepe voluptates veniam, dolorem voluptas nostrum animi ducimus ratione, nesciunt esse alias eius est pariatur nihil iste qui consequuntur recusandae deserunt obcaecati ipsa ea corporis. Quas veniam, ut neque voluptate, iste labore sit nisi accusantium quaerat molestiae, eaque veritatis esse reprehenderit? Eaque soluta delectus rem. Distinctio quibusdam esse ullam at, eos molestiae eius. Velit illo tempora aliquam in, consequatur dolorem odit mollitia repudiandae nisi dignissimos cum voluptatibus odio incidunt nihil ratione ullam magnam nam vitae distinctio quam? Nisi sapiente doloremque a? Debitis vitae minima aperiam numquam rem eaque porro non cumque perspiciatis fugit tempora corporis totam dignissimos vel atque, adipisci at? Consequatur asperiores atque qui? Porro laborum tenetur quam quidem natus inventore cumque necessitatibus accusamus? Qui sunt explicabo libero autem a possimus numquam corrupti, deserunt placeat esse vero dolore odio nisi hic ipsa ex assumenda labore error. Et laboriosam consequatur illo officia animi possimus quae, consectetur, vero minus doloremque pariatur maxime ut optio deserunt voluptas labore dignissimos sapiente doloribus natus sequi accusamus tenetur. Rem voluptatibus vero perferendis odio vel hic, aliquid pariatur accusamus totam debitis ducimus, quidem iusto quos! Nemo eos temporibus perferendis impedit accusantium pariatur voluptatum, ullam amet atque libero. Aut rerum temporibus voluptate eum aperiam eius ducimus sit error ea culpa qui quo incidunt vel, dolor, necessitatibus, dicta dolorum blanditiis totam obcaecati dignissimos animi adipisci odit veritatis quasi. Reprehenderit, cum hic? Illo est, ad incidunt dolore vel adipisci laudantium harum, rerum error, nesciunt culpa alias! Ipsam, cupiditate eum in atque, officiis vel explicabo rem impedit quasi veniam similique velit quaerat aspernatur modi ducimus. Praesentium ipsa in architecto omnis doloribus soluta cum illum eos. Impedit distinctio quae, similique debitis delectus totam consequatur quasi reiciendis porro odio voluptas asperiores corporis, modi molestias? Perspiciatis, quos ipsa fugiat voluptatum recusandae excepturi aperiam quisquam nobis. Ipsam facere omnis sint sunt et at beatae. Nam explicabo assumenda porro reiciendis, cum cupiditate ullam minima veniam sit corrupti repellendus obcaecati vero. Enim nostrum facere, ab aliquid amet labore doloremque beatae eveniet culpa, corporis voluptatum quas voluptate commodi quibusdam ullam illo dolorem a ipsa sapiente. Qui eaque iste totam itaque mollitia, ratione, soluta hic amet consequatur dolores eveniet impedit ipsam. Laudantium impedit, odit odio vero sit, corrupti facilis nam minima tempora temporibus debitis error vitae hic corporis, recusandae nobis. Voluptatibus, deserunt tempore atque facere eveniet eligendi numquam sed ut minima quasi dicta quas rerum, voluptatum dolores molestiae quis alias voluptate dolorem ex voluptatem. Aspernatur voluptatem cumque cupiditate sint, quas tempora. Mollitia nesciunt exercitationem cupiditate aliquid quasi quo distinctio ipsa qui praesentium voluptatibus veniam, voluptatem dicta officiis, quia iusto facilis, eaque quos perferendis recusandae quam fugiat tempora quis? Accusamus quibusdam et quia? Debitis aut natus obcaecati dolores, ipsa cumque dolore hic placeat mollitia fugiat quasi qui, ipsum, quam veniam. Veritatis nihil iusto sequi nulla eligendi est tempore iste ullam aliquam, dicta doloribus, vero, nisi soluta quasi aspernatur architecto maiores illum eveniet? Non atque necessitatibus, impedit accusamus quia dignissimos illum modi explicabo tempore amet saepe et autem aliquam nesciunt fugiat vel facilis at provident error earum porro ab! A totam iusto assumenda beatae laboriosam ad dolorem vel, commodi dolore. Modi sit praesentium ea quo deleniti? Ratione, dolores beatae! Incidunt facilis rerum nemo quis, voluptate culpa impedit, odio alias ratione fugiat a reprehenderit iure ducimus quidem veniam aperiam excepturi vitae, quos adipisci atque explicabo omnis tempora sequi? Iusto cum qui id nihil recusandae optio quas veritatis, ratione eius, voluptatum maiores amet eligendi suscipit minus accusantium necessitatibus architecto eum, natus pariatur! Repellat provident, sapiente voluptas fugit quam nostrum at vel, adipisci, nemo porro illum totam minima necessitatibus repudiandae aliquam alias. Ullam rem excepturi provident in suscipit sunt, magni molestiae animi dignissimos inventore nesciunt. Corrupti labore voluptatem in nam, blanditiis inventore nihil maxime modi sed accusantium esse velit exercitationem cum, harum repellendus voluptate nostrum? Fugiat, incidunt exercitationem ratione dolor in necessitatibus distinctio minima voluptatem magnam voluptate provident accusamus laboriosam commodi et nulla debitis pariatur corporis ipsam hic omnis eius deleniti facilis soluta dolores. Ab voluptates suscipit tempore eveniet natus assumenda explicabo fugit perferendis, voluptatibus temporibus officiis in obcaecati eius velit quibusdam amet vitae dolores tempora ipsum nostrum doloremque illo architecto aut! Totam quae sunt, dolorem voluptates enim, fugiat recusandae ratione quia eveniet natus suscipit voluptatum quasi mollitia officiis assumenda sapiente alias? Officia officiis voluptatem inventore repellat esse facilis exercitationem similique illo eius consequuntur, natus corrupti ex tempora quo dignissimos, aut id provident quod. Cumque fugiat deleniti recusandae molestias hic quia, sint voluptatibus totam maiores placeat odit tempora voluptatem laborum quas quae esse numquam quibusdam? Laboriosam libero doloremque aperiam illo tempore hic velit eius vel assumenda sit, aliquam ipsam ducimus dolorem voluptates officia explicabo minima odio doloribus nesciunt maiores quasi unde! Labore, obcaecati explicabo aliquid distinctio totam in minus molestias. Velit ea accusantium quisquam, sunt autem voluptatem obcaecati natus, veritatis vitae fuga, earum atque praesentium explicabo quos saepe cumque recusandae debitis ipsum nobis sequi dignissimos totam! Exercitationem veritatis repellendus quia eius ad reiciendis voluptates tempora iure odit minus commodi, provident sit vel, accusantium ducimus hic! Et, ea. Tempora soluta magnam quas quia, natus laborum.</span>
+        </ul>
+          
+    </div>
+    
+
+    
+    <div class="buttonGithub">
+      <button class="Github" ,="" onclick="Github()">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" 
+        viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+        <path d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9a127.5 127.5 0 0 1 38.1 91v112.5c.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z">
+        </path>
+        </svg>
+        My Github
+      </button> 
+    </div>
+
+    
+    <div class="contenedor">
+      <div class="boton" onclick="Facebook()">
+        <div class="icono">
+          <i class="fa fa-facebook"></i>
+        </div>
+        <span>Facebook</span>
+      </div>
+      <div class="boton" onclick="Instagram()">
+        <div class="icono">
+          <i class="fa fa-instagram"></i>
+        </div>
+        <span>Instagram</span>
+      </div>
+
+  </main>
+
+
+
+  <footer>
+    
+    <div class="content">
+      <div class="footer">
+        <h2>Phetklao</h2>
+        <a href="https://mybio-d88cb.firebaseapp.com/">My Website</a>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script> 
+    function Github()   {window.open('https://github.com/Cakenomsod' , '_blank')}
+    function Instagram()   {window.open('https://www.instagram.com/cake.nomsod/' , '_blank')}
+    function Facebook()   {window.open('https://www.facebook.com/profile.php?id=100070582816177' , '_blank')}
+
+    /*แถบนำทาง*/
+      function hammenu(x) {
+        x.classList.toggle("change");
+
+        let link = document.getElementById('Navmenu')
+        if (link.className === 'Navmenu') {
+            link.className += ' Navmenu-active'
+        }   else {
+            link.className = 'Navmenu'
+        }
+      }
+      
+    /*เปลี่ยนโหมด(โหมดมือ/สว่าง)*/
+      function toggleMode() {
+        var body = document.getElementsByTagName("BODY")[0];
+        var currentClass = body.className;
+        body.className = currentClass === "dark" ? "light" : "dark";
+      }
+
+    /*Hide and show button*/
+      function hide() {
+        var x = document.getElementById("span");
+        var y = document.getElementById("test");
+        if (y.style.display === "none") {
+            y.style.display = "block";
+          } else {
+            y.style.display = "none";
+          }
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+
+  </script>
+
+
+  <style>
+    
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*Body*/
+body {
+  background: linear-gradient(45deg,#f6e4ff,#a6a8ff);
+  transition: background-color 0.5s;
+  transition: 0.5s;
+  
+}
+.dark {
+  background: linear-gradient(45deg,#bbaec2,#898ad3);
+  color: #686868;
+  
+}
+.light {
+  background: linear-gradient(45deg,#f6e4ff,#a6a8ff);
+  color: #333;
+}
+.content {
+  max-width: none;
+  margin: 0 auto;
+}
+
+/*Nav Bar*/
+nav {
+  background-color: #f3c8c8;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 999; 
+}
+
+nav .Navmenu {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  position: relative;
+}
+nav .logo {
+  padding-left: 20px;
+}
+ul.Navmenu {
+  display: flex;
+  list-style: none;
+}
+ul.Navmenu li a {
+transition: color 0.5s ease-out, font-size 0.3s ease-in-out; /* เอฟเฟกต์การเปลี่ยนสีของตัวอักษร และขนาดตัวอักษร */
+}
+
+ul.Navmenu li a:hover {
+  color: rgb(133, 0, 0); 
+  font-size: 40px; 
+}
+
+ul.Navmenu p {
+  height: 65px;
+  font-size: 50px;
+}
+/*Dark Nav*/
+.dark nav  {
+  background-color: #cea6a6;
+  transition: 0.5s;
+}
+/**/
+li.OnlineWeb a {
+  font-size: xx-large;
+  color: rgb(255, 52, 85);
+}
+li.MyWebsite a {
+  font-size: xx-large;
+  color: rgb(255, 52, 85);
+}
+ul.Navmenu a:hover {
+  background-color: #c25b5b;
+}
+/*swicth Mode*/
+.toggle-switch {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 200px;
+}
+label.mode {
+  position: absolute;
+  width: 50%;
+  height: 50px;
+  background-color: #000000;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+label.mode input {
+  position: absolute;
+  display: none;
+}
+label.mode .slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+label.mode input:checked ~ .slider {
+  background-color: #ffffff;
+}
+label.mode .slider::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: inset 14px -4px 0px 0px #ffffff;
+  background-color: #000000;
+  transition: 0.3s;
+}
+label.mode input:checked ~ .slider::before {
+  transform: translateX(45px);
+  background-color: #000000;
+  box-shadow: none;
+}
+
+/*hide and show*/
+.Hideul-span .button1:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.button1 {
+  background-color: #216eff;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin: 16px 0 !important;
+  text-decoration: none;
+  font-size:16px;
+  cursor:pointer;
+  border-radius: 25px;
+  }
+
+
+/*main*/
+main {
+  max-width: 1280px;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+}
+
+main .Characters p {
+  color: rgb(69, 209, 209);
+}
+.dark main .Originanimals h1 {
+  color: rgb(12, 35, 99);
+}
+main .Originanimals h1.Type-1 {
+  color: rgb(21, 74, 221);
+}
+.Originanimals p.info {
+  color: #575aff;
+}
+.dark ul.Type-1 img {
+  filter: brightness(75%);
+}
+ul.Type-1 img {
+  height: 200px;
+  border-radius: 25px;
+}
+main ul {
+  padding-bottom: 1rem;
+}
+
+
+button.Github{
+  text-align: center;  
+  padding: 20px 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border: 0px;
+  position: relative;
+  margin: 20px;
+  transition: all 0.25s ease;
+}
+
+.buttonGithub{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Github{
+    background: #6e5494;
+    color: #fff;
+    border-radius: 30px;
+    transition: all 0.25s ease;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.Github:hover{
+    color: #000;
+    transform: translate(0px, -6px);
+}
+
+.Github::after{
+    position: absolute;
+}
+
+
+
+.contenedor {
+  place-items: center;
+  padding-left: 25px;
+}
+
+
+
+.contenedor .boton{
+  margin-right: 50px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  background: #d9c2da;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+}
+.contenedor .boton .icono{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.contenedor .boton .icono i{
+  font-size: 25px;
+  line-height: 60px;
+}
+.contenedor .boton span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+}
+.contenedor .boton:hover{
+  width: 200px;
+}
+.contenedor .boton:nth-child(1):hover .icono{
+  background: #4267b2;
+}
+.contenedor .boton:nth-child(2):hover .icono{
+  background: #405DE6;
+}
+
+.contenedor .boton:hover .icono i{
+  color: #fff;
+}
+.contenedor .boton:nth-child(1):hover span{
+  color: #4267b2;
+}
+.contenedor .boton:nth-child(2):hover span{
+  color: #E1306C;
+}
+
+
+
+
+
+footer{
+  background-color: #aaa;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+}
+.footer h2 {
+  margin: auto;
+}
+.footer a {
+  text-decoration: none;
+  color: #c04949;
+  margin-right: 15px;
+}
+
+
+@media screen and (max-width: 1474px){
+  /*Nav Bar*/
+
+
+  ul.Navmenu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+  ul.Navmenu-active {
+    display: block !important;
+  }
+  .logo h3 {
+    font-size: xx-large;
+  }
+  nav .Navmenu {
+    height: auto;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-right: 25px;
+    transition: 0.5s;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  ul.Navmenu li {
+    margin: 0.5rem 0;
+    padding: 1rem 0.5rem;
+    border-top: 1.5px solid #aaaaaa;
+    transition: 0.3s;
+  }
+  ul.Navmenu li.OnlineWeb {
+    border-top: 10px solid #d36060;
+  }
+  ul.Navmenu li:hover {
+    background-color: #c25b5b;
+  }
+  ul.Navmenu li a {
+    font-size: x-large;
+    text-decoration: none;
+    color: #000000;
+  }
+  ul.Navmenu p {
+  display: none;
+}
+  /*menuHam*/
+  .hammenu {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    padding-bottom: 7.5px;
+    right: 1rem;
+    bottom: 1px;
+  }
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  /* Rotate first bar */
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+  /* Fade out the second bar */
+  .change .bar2 {opacity: 0;}
+  /* Rotate last bar */
+  .change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+  }
+}
+
+
+@media screen and (min-width: 1475px) {
+  .logo {
+    margin-left: 40px;
+  }
+  .logo h3 {
+    font-size: xx-large;
+  }
+  ul.Navmenu {
+    margin-left: auto;
+    list-style: none;
+    text-align: center;
+    width: fit-content;
+    margin-right: 2rem;
+  }
+  ul.Navmenu li {
+    padding: 35px;
+  }
+  ul.Navmenu li a {
+    font-size: xx-large;
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .toggle-switch {
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 200px;
+  }
+}
+
+  </style>
+
+
+
+</body>
+</html>
